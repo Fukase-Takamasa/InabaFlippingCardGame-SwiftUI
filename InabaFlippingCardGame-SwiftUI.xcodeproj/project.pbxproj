@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59450009241B76AA0072E035 /* InabaFlippingCardGame_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59450008241B76AA0072E035 /* InabaFlippingCardGame_SwiftUIUITests.swift */; };
+		5945FFE7241B76A70072E035 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5945FFE6241B76A70072E035 /* AppDelegate.swift */; };
+		5945FFE9241B76A70072E035 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5945FFE8241B76A70072E035 /* SceneDelegate.swift */; };
+		5945FFEB241B76A70072E035 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5945FFEA241B76A70072E035 /* ContentView.swift */; };
+		5945FFED241B76AA0072E035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5945FFEC241B76AA0072E035 /* Assets.xcassets */; };
+		5945FFF0241B76AA0072E035 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5945FFEF241B76AA0072E035 /* Preview Assets.xcassets */; };
+		5945FFF3241B76AA0072E035 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5945FFF1241B76AA0072E035 /* LaunchScreen.storyboard */; };
+		5945FFFE241B76AA0072E035 /* InabaFlippingCardGame_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5945FFFD241B76AA0072E035 /* InabaFlippingCardGame_SwiftUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59450005241B76AA0072E035 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5945FFDB241B76A70072E035 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5945FFE2241B76A70072E035;
+			remoteInfo = "InabaFlippingCardGame-SwiftUI";
+		};
+		5945FFFA241B76AA0072E035 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5945FFDB241B76A70072E035 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5945FFE2241B76A70072E035;
+			remoteInfo = "InabaFlippingCardGame-SwiftUI";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		59450004241B76AA0072E035 /* InabaFlippingCardGame-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "InabaFlippingCardGame-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59450008241B76AA0072E035 /* InabaFlippingCardGame_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InabaFlippingCardGame_SwiftUIUITests.swift; sourceTree = "<group>"; };
+		5945000A241B76AA0072E035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5945FFE3241B76A70072E035 /* InabaFlippingCardGame-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InabaFlippingCardGame-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5945FFE6241B76A70072E035 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5945FFE8241B76A70072E035 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5945FFEA241B76A70072E035 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5945FFEC241B76AA0072E035 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5945FFEF241B76AA0072E035 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5945FFF2241B76AA0072E035 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5945FFF4241B76AA0072E035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5945FFF9241B76AA0072E035 /* InabaFlippingCardGame-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "InabaFlippingCardGame-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5945FFFD241B76AA0072E035 /* InabaFlippingCardGame_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InabaFlippingCardGame_SwiftUITests.swift; sourceTree = "<group>"; };
+		5945FFFF241B76AA0072E035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59450001241B76AA0072E035 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5945FFE0241B76A70072E035 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5945FFF6241B76AA0072E035 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59450007241B76AA0072E035 /* InabaFlippingCardGame-SwiftUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				59450008241B76AA0072E035 /* InabaFlippingCardGame_SwiftUIUITests.swift */,
+				5945000A241B76AA0072E035 /* Info.plist */,
+			);
+			path = "InabaFlippingCardGame-SwiftUIUITests";
+			sourceTree = "<group>";
+		};
+		5945FFDA241B76A70072E035 = {
+			isa = PBXGroup;
+			children = (
+				5945FFE5241B76A70072E035 /* InabaFlippingCardGame-SwiftUI */,
+				5945FFFC241B76AA0072E035 /* InabaFlippingCardGame-SwiftUITests */,
+				59450007241B76AA0072E035 /* InabaFlippingCardGame-SwiftUIUITests */,
+				5945FFE4241B76A70072E035 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5945FFE4241B76A70072E035 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5945FFE3241B76A70072E035 /* InabaFlippingCardGame-SwiftUI.app */,
+				5945FFF9241B76AA0072E035 /* InabaFlippingCardGame-SwiftUITests.xctest */,
+				59450004241B76AA0072E035 /* InabaFlippingCardGame-SwiftUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5945FFE5241B76A70072E035 /* InabaFlippingCardGame-SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				5945FFE6241B76A70072E035 /* AppDelegate.swift */,
+				5945FFE8241B76A70072E035 /* SceneDelegate.swift */,
+				5945FFEA241B76A70072E035 /* ContentView.swift */,
+				5945FFEC241B76AA0072E035 /* Assets.xcassets */,
+				5945FFF1241B76AA0072E035 /* LaunchScreen.storyboard */,
+				5945FFF4241B76AA0072E035 /* Info.plist */,
+				5945FFEE241B76AA0072E035 /* Preview Content */,
+			);
+			path = "InabaFlippingCardGame-SwiftUI";
+			sourceTree = "<group>";
+		};
+		5945FFEE241B76AA0072E035 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5945FFEF241B76AA0072E035 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5945FFFC241B76AA0072E035 /* InabaFlippingCardGame-SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5945FFFD241B76AA0072E035 /* InabaFlippingCardGame_SwiftUITests.swift */,
+				5945FFFF241B76AA0072E035 /* Info.plist */,
+			);
+			path = "InabaFlippingCardGame-SwiftUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59450003241B76AA0072E035 /* InabaFlippingCardGame-SwiftUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59450013241B76AA0072E035 /* Build configuration list for PBXNativeTarget "InabaFlippingCardGame-SwiftUIUITests" */;
+			buildPhases = (
+				59450000241B76AA0072E035 /* Sources */,
+				59450001241B76AA0072E035 /* Frameworks */,
+				59450002241B76AA0072E035 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59450006241B76AA0072E035 /* PBXTargetDependency */,
+			);
+			name = "InabaFlippingCardGame-SwiftUIUITests";
+			productName = "InabaFlippingCardGame-SwiftUIUITests";
+			productReference = 59450004241B76AA0072E035 /* InabaFlippingCardGame-SwiftUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5945FFE2241B76A70072E035 /* InabaFlippingCardGame-SwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5945000D241B76AA0072E035 /* Build configuration list for PBXNativeTarget "InabaFlippingCardGame-SwiftUI" */;
+			buildPhases = (
+				5945FFDF241B76A70072E035 /* Sources */,
+				5945FFE0241B76A70072E035 /* Frameworks */,
+				5945FFE1241B76A70072E035 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "InabaFlippingCardGame-SwiftUI";
+			productName = "InabaFlippingCardGame-SwiftUI";
+			productReference = 5945FFE3241B76A70072E035 /* InabaFlippingCardGame-SwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5945FFF8241B76AA0072E035 /* InabaFlippingCardGame-SwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59450010241B76AA0072E035 /* Build configuration list for PBXNativeTarget "InabaFlippingCardGame-SwiftUITests" */;
+			buildPhases = (
+				5945FFF5241B76AA0072E035 /* Sources */,
+				5945FFF6241B76AA0072E035 /* Frameworks */,
+				5945FFF7241B76AA0072E035 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5945FFFB241B76AA0072E035 /* PBXTargetDependency */,
+			);
+			name = "InabaFlippingCardGame-SwiftUITests";
+			productName = "InabaFlippingCardGame-SwiftUITests";
+			productReference = 5945FFF9241B76AA0072E035 /* InabaFlippingCardGame-SwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5945FFDB241B76A70072E035 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "深瀬 貴将";
+				TargetAttributes = {
+					59450003241B76AA0072E035 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 5945FFE2241B76A70072E035;
+					};
+					5945FFE2241B76A70072E035 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					5945FFF8241B76AA0072E035 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 5945FFE2241B76A70072E035;
+					};
+				};
+			};
+			buildConfigurationList = 5945FFDE241B76A70072E035 /* Build configuration list for PBXProject "InabaFlippingCardGame-SwiftUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5945FFDA241B76A70072E035;
+			productRefGroup = 5945FFE4241B76A70072E035 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5945FFE2241B76A70072E035 /* InabaFlippingCardGame-SwiftUI */,
+				5945FFF8241B76AA0072E035 /* InabaFlippingCardGame-SwiftUITests */,
+				59450003241B76AA0072E035 /* InabaFlippingCardGame-SwiftUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59450002241B76AA0072E035 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5945FFE1241B76A70072E035 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5945FFF3241B76AA0072E035 /* LaunchScreen.storyboard in Resources */,
+				5945FFF0241B76AA0072E035 /* Preview Assets.xcassets in Resources */,
+				5945FFED241B76AA0072E035 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5945FFF7241B76AA0072E035 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59450000241B76AA0072E035 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59450009241B76AA0072E035 /* InabaFlippingCardGame_SwiftUIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5945FFDF241B76A70072E035 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5945FFE7241B76A70072E035 /* AppDelegate.swift in Sources */,
+				5945FFE9241B76A70072E035 /* SceneDelegate.swift in Sources */,
+				5945FFEB241B76A70072E035 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5945FFF5241B76AA0072E035 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5945FFFE241B76AA0072E035 /* InabaFlippingCardGame_SwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59450006241B76AA0072E035 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5945FFE2241B76A70072E035 /* InabaFlippingCardGame-SwiftUI */;
+			targetProxy = 59450005241B76AA0072E035 /* PBXContainerItemProxy */;
+		};
+		5945FFFB241B76AA0072E035 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5945FFE2241B76A70072E035 /* InabaFlippingCardGame-SwiftUI */;
+			targetProxy = 5945FFFA241B76AA0072E035 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5945FFF1241B76AA0072E035 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5945FFF2241B76AA0072E035 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5945000B241B76AA0072E035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5945000C241B76AA0072E035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5945000E241B76AA0072E035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"InabaFlippingCardGame-SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = G8Q84RGJJC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "InabaFlippingCardGame-SwiftUI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fuksae.InabaFlippingCardGame-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5945000F241B76AA0072E035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"InabaFlippingCardGame-SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = G8Q84RGJJC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "InabaFlippingCardGame-SwiftUI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fuksae.InabaFlippingCardGame-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		59450011241B76AA0072E035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8Q84RGJJC;
+				INFOPLIST_FILE = "InabaFlippingCardGame-SwiftUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fuksae.InabaFlippingCardGame-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InabaFlippingCardGame-SwiftUI.app/InabaFlippingCardGame-SwiftUI";
+			};
+			name = Debug;
+		};
+		59450012241B76AA0072E035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8Q84RGJJC;
+				INFOPLIST_FILE = "InabaFlippingCardGame-SwiftUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fuksae.InabaFlippingCardGame-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InabaFlippingCardGame-SwiftUI.app/InabaFlippingCardGame-SwiftUI";
+			};
+			name = Release;
+		};
+		59450014241B76AA0072E035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8Q84RGJJC;
+				INFOPLIST_FILE = "InabaFlippingCardGame-SwiftUIUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fuksae.InabaFlippingCardGame-SwiftUIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "InabaFlippingCardGame-SwiftUI";
+			};
+			name = Debug;
+		};
+		59450015241B76AA0072E035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8Q84RGJJC;
+				INFOPLIST_FILE = "InabaFlippingCardGame-SwiftUIUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fuksae.InabaFlippingCardGame-SwiftUIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "InabaFlippingCardGame-SwiftUI";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5945000D241B76AA0072E035 /* Build configuration list for PBXNativeTarget "InabaFlippingCardGame-SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5945000E241B76AA0072E035 /* Debug */,
+				5945000F241B76AA0072E035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59450010241B76AA0072E035 /* Build configuration list for PBXNativeTarget "InabaFlippingCardGame-SwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59450011241B76AA0072E035 /* Debug */,
+				59450012241B76AA0072E035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59450013241B76AA0072E035 /* Build configuration list for PBXNativeTarget "InabaFlippingCardGame-SwiftUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59450014241B76AA0072E035 /* Debug */,
+				59450015241B76AA0072E035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5945FFDE241B76A70072E035 /* Build configuration list for PBXProject "InabaFlippingCardGame-SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5945000B241B76AA0072E035 /* Debug */,
+				5945000C241B76AA0072E035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5945FFDB241B76A70072E035 /* Project object */;
+}
