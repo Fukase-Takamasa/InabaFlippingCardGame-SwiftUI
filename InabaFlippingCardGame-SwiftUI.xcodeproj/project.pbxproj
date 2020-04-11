@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44D4D3AE58BF70297FC3A6A7 /* Pods_InabaFlippingCardGame_SwiftUI_InabaFlippingCardGame_SwiftUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D17CF3F501AD147429DA91 /* Pods_InabaFlippingCardGame_SwiftUI_InabaFlippingCardGame_SwiftUIUITests.framework */; };
+		47D7A15DD0E06BD1A4AB50CE /* Pods_InabaFlippingCardGame_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F8234771EC72D5A4E9B980 /* Pods_InabaFlippingCardGame_SwiftUI.framework */; };
 		591F6BD72441D59C00D2ACB6 /* LobbyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591F6BD62441D59C00D2ACB6 /* LobbyPage.swift */; };
 		59450009241B76AA0072E035 /* InabaFlippingCardGame_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59450008241B76AA0072E035 /* InabaFlippingCardGame_SwiftUIUITests.swift */; };
 		5945FFE7241B76A70072E035 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5945FFE6241B76A70072E035 /* AppDelegate.swift */; };
@@ -16,6 +18,7 @@
 		5945FFF0241B76AA0072E035 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5945FFEF241B76AA0072E035 /* Preview Assets.xcassets */; };
 		5945FFF3241B76AA0072E035 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5945FFF1241B76AA0072E035 /* LaunchScreen.storyboard */; };
 		5945FFFE241B76AA0072E035 /* InabaFlippingCardGame_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5945FFFD241B76AA0072E035 /* InabaFlippingCardGame_SwiftUITests.swift */; };
+		CFEDFDE41E2647AEB018037C /* Pods_InabaFlippingCardGame_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89C8218C41D34923FB99537 /* Pods_InabaFlippingCardGame_SwiftUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21F8234771EC72D5A4E9B980 /* Pods_InabaFlippingCardGame_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InabaFlippingCardGame_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		512EFD80C761E3D50A52084E /* Pods-InabaFlippingCardGame-SwiftUI-InabaFlippingCardGame-SwiftUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InabaFlippingCardGame-SwiftUI-InabaFlippingCardGame-SwiftUIUITests.release.xcconfig"; path = "Target Support Files/Pods-InabaFlippingCardGame-SwiftUI-InabaFlippingCardGame-SwiftUIUITests/Pods-InabaFlippingCardGame-SwiftUI-InabaFlippingCardGame-SwiftUIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		591F6BD62441D59C00D2ACB6 /* LobbyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyPage.swift; sourceTree = "<group>"; };
 		59450004241B76AA0072E035 /* InabaFlippingCardGame-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "InabaFlippingCardGame-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59450008241B76AA0072E035 /* InabaFlippingCardGame_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InabaFlippingCardGame_SwiftUIUITests.swift; sourceTree = "<group>"; };
@@ -51,6 +56,13 @@
 		5945FFF9241B76AA0072E035 /* InabaFlippingCardGame-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "InabaFlippingCardGame-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5945FFFD241B76AA0072E035 /* InabaFlippingCardGame_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InabaFlippingCardGame_SwiftUITests.swift; sourceTree = "<group>"; };
 		5945FFFF241B76AA0072E035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60CFC430578D352FA534BBCF /* Pods-InabaFlippingCardGame-SwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InabaFlippingCardGame-SwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-InabaFlippingCardGame-SwiftUITests/Pods-InabaFlippingCardGame-SwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A677F63E84D5C7AA949BB8D7 /* Pods-InabaFlippingCardGame-SwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InabaFlippingCardGame-SwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-InabaFlippingCardGame-SwiftUITests/Pods-InabaFlippingCardGame-SwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B7D6E59996C6FA1068FC5C25 /* Pods-InabaFlippingCardGame-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InabaFlippingCardGame-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-InabaFlippingCardGame-SwiftUI/Pods-InabaFlippingCardGame-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		B89C8218C41D34923FB99537 /* Pods_InabaFlippingCardGame_SwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InabaFlippingCardGame_SwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5524642DBD506E04D9FC03E /* Pods-InabaFlippingCardGame-SwiftUI-InabaFlippingCardGame-SwiftUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InabaFlippingCardGame-SwiftUI-InabaFlippingCardGame-SwiftUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-InabaFlippingCardGame-SwiftUI-InabaFlippingCardGame-SwiftUIUITests/Pods-InabaFlippingCardGame-SwiftUI-InabaFlippingCardGame-SwiftUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E2D17CF3F501AD147429DA91 /* Pods_InabaFlippingCardGame_SwiftUI_InabaFlippingCardGame_SwiftUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InabaFlippingCardGame_SwiftUI_InabaFlippingCardGame_SwiftUIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC6CCCE9FA661386D181A060 /* Pods-InabaFlippingCardGame-SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InabaFlippingCardGame-SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-InabaFlippingCardGame-SwiftUI/Pods-InabaFlippingCardGame-SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D4D3AE58BF70297FC3A6A7 /* Pods_InabaFlippingCardGame_SwiftUI_InabaFlippingCardGame_SwiftUIUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47D7A15DD0E06BD1A4AB50CE /* Pods_InabaFlippingCardGame_SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFEDFDE41E2647AEB018037C /* Pods_InabaFlippingCardGame_SwiftUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +109,8 @@
 				5945FFFC241B76AA0072E035 /* InabaFlippingCardGame-SwiftUITests */,
 				59450007241B76AA0072E035 /* InabaFlippingCardGame-SwiftUIUITests */,
 				5945FFE4241B76A70072E035 /* Products */,
+				FED9A8B6729C51767F53B0BD /* Pods */,
+				87B4044F7CB0466FE89AE134 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +156,30 @@
 			path = "InabaFlippingCardGame-SwiftUITests";
 			sourceTree = "<group>";
 		};
+		87B4044F7CB0466FE89AE134 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21F8234771EC72D5A4E9B980 /* Pods_InabaFlippingCardGame_SwiftUI.framework */,
+				E2D17CF3F501AD147429DA91 /* Pods_InabaFlippingCardGame_SwiftUI_InabaFlippingCardGame_SwiftUIUITests.framework */,
+				B89C8218C41D34923FB99537 /* Pods_InabaFlippingCardGame_SwiftUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FED9A8B6729C51767F53B0BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC6CCCE9FA661386D181A060 /* Pods-InabaFlippingCardGame-SwiftUI.debug.xcconfig */,
+				B7D6E59996C6FA1068FC5C25 /* Pods-InabaFlippingCardGame-SwiftUI.release.xcconfig */,
+				C5524642DBD506E04D9FC03E /* Pods-InabaFlippingCardGame-SwiftUI-InabaFlippingCardGame-SwiftUIUITests.debug.xcconfig */,
+				512EFD80C761E3D50A52084E /* Pods-InabaFlippingCardGame-SwiftUI-InabaFlippingCardGame-SwiftUIUITests.release.xcconfig */,
+				A677F63E84D5C7AA949BB8D7 /* Pods-InabaFlippingCardGame-SwiftUITests.debug.xcconfig */,
+				60CFC430578D352FA534BBCF /* Pods-InabaFlippingCardGame-SwiftUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59450013241B76AA0072E035 /* Build configuration list for PBXNativeTarget "InabaFlippingCardGame-SwiftUIUITests" */;
 			buildPhases = (
+				58C8A148B65CA6376EE59566 /* [CP] Check Pods Manifest.lock */,
 				59450000241B76AA0072E035 /* Sources */,
 				59450001241B76AA0072E035 /* Frameworks */,
 				59450002241B76AA0072E035 /* Resources */,
+				3FCC2E4C63B7247A90B76A3E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5945000D241B76AA0072E035 /* Build configuration list for PBXNativeTarget "InabaFlippingCardGame-SwiftUI" */;
 			buildPhases = (
+				4DE242F22EF91C981B0DD407 /* [CP] Check Pods Manifest.lock */,
 				5945FFDF241B76A70072E035 /* Sources */,
 				5945FFE0241B76A70072E035 /* Frameworks */,
 				5945FFE1241B76A70072E035 /* Resources */,
+				F391F9D8C996539947655239 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59450010241B76AA0072E035 /* Build configuration list for PBXNativeTarget "InabaFlippingCardGame-SwiftUITests" */;
 			buildPhases = (
+				8C7C51EE3B275C792D010352 /* [CP] Check Pods Manifest.lock */,
 				5945FFF5241B76AA0072E035 /* Sources */,
 				5945FFF6241B76AA0072E035 /* Frameworks */,
 				5945FFF7241B76AA0072E035 /* Resources */,
@@ -264,6 +310,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FCC2E4C63B7247A90B76A3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InabaFlippingCardGame-SwiftUI-InabaFlippingCardGame-SwiftUIUITests/Pods-InabaFlippingCardGame-SwiftUI-InabaFlippingCardGame-SwiftUIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InabaFlippingCardGame-SwiftUI-InabaFlippingCardGame-SwiftUIUITests/Pods-InabaFlippingCardGame-SwiftUI-InabaFlippingCardGame-SwiftUIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InabaFlippingCardGame-SwiftUI-InabaFlippingCardGame-SwiftUIUITests/Pods-InabaFlippingCardGame-SwiftUI-InabaFlippingCardGame-SwiftUIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DE242F22EF91C981B0DD407 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InabaFlippingCardGame-SwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58C8A148B65CA6376EE59566 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InabaFlippingCardGame-SwiftUI-InabaFlippingCardGame-SwiftUIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C7C51EE3B275C792D010352 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InabaFlippingCardGame-SwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F391F9D8C996539947655239 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InabaFlippingCardGame-SwiftUI/Pods-InabaFlippingCardGame-SwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InabaFlippingCardGame-SwiftUI/Pods-InabaFlippingCardGame-SwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InabaFlippingCardGame-SwiftUI/Pods-InabaFlippingCardGame-SwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		59450000241B76AA0072E035 /* Sources */ = {
@@ -436,6 +585,7 @@
 		};
 		5945000E241B76AA0072E035 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC6CCCE9FA661386D181A060 /* Pods-InabaFlippingCardGame-SwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -456,6 +606,7 @@
 		};
 		5945000F241B76AA0072E035 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7D6E59996C6FA1068FC5C25 /* Pods-InabaFlippingCardGame-SwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -476,6 +627,7 @@
 		};
 		59450011241B76AA0072E035 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A677F63E84D5C7AA949BB8D7 /* Pods-InabaFlippingCardGame-SwiftUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -498,6 +650,7 @@
 		};
 		59450012241B76AA0072E035 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60CFC430578D352FA534BBCF /* Pods-InabaFlippingCardGame-SwiftUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -520,6 +673,7 @@
 		};
 		59450014241B76AA0072E035 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5524642DBD506E04D9FC03E /* Pods-InabaFlippingCardGame-SwiftUI-InabaFlippingCardGame-SwiftUIUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,6 +694,7 @@
 		};
 		59450015241B76AA0072E035 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 512EFD80C761E3D50A52084E /* Pods-InabaFlippingCardGame-SwiftUI-InabaFlippingCardGame-SwiftUIUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

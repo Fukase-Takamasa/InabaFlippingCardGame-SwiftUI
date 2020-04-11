@@ -100,7 +100,6 @@ struct LobbyPage: View {
 
                 .navigationBarTitle("ロビー«SwiftUI»", displayMode: .inline)
             }
-//            .edgesIgnoringSafeArea()
         }
     }
 }
