@@ -44,7 +44,7 @@ struct LobbyPage: View {
                                     TextField("", text: $playerName)
                                         .accentColor(.orange)
                                         .foregroundColor(.white)
-                                    .font(.system(size: 15, weight: .regular, design: .default))
+                                    .font(.system(size: 15, weight: .light, design: .default))
                                 }
                                 Rectangle()
                                 .foregroundColor(Color.clear)
