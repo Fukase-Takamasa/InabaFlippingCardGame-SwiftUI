@@ -20,7 +20,7 @@ struct LobbyPage: View {
         NavigationView {
             
             ZStack {
-                Color.green
+                Color(red: 44/255, green: 113/255, blue: 44/255)
                     .edgesIgnoringSafeArea(.all)
                 VStack(){
                     HStack{
@@ -42,6 +42,9 @@ struct LobbyPage: View {
                                         
                                     }
                                     TextField("", text: $playerName)
+                                        .accentColor(.orange)
+                                        .foregroundColor(.white)
+                                    .font(.system(size: 15, weight: .regular, design: .default))
                                 }
                                 Rectangle()
                                 .foregroundColor(Color.clear)
@@ -52,8 +55,6 @@ struct LobbyPage: View {
                                 .frame(height: 1)
                         }
                     }
-//                        .frame(width: 150, height: 35, alignment: .trailing)
-//                        .padding(.leading, 160)
                     Text("ひとりで遊ぶ")
                         .foregroundColor(.white)
                         .font(.system(size: 23, weight: .black, design: .default))
