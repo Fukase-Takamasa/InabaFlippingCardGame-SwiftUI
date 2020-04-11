@@ -9,6 +9,8 @@ target 'InabaFlippingCardGame-SwiftUI' do
 
   pod 'Firebase/Firestore'
   pod 'Firebase/Analytics'
+  pod 'Firebase/Core'
+  pod 'FirebaseFirestoreSwift'
 
 
   target 'InabaFlippingCardGame-SwiftUITests' do
