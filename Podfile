@@ -8,6 +8,8 @@ target 'InabaFlippingCardGame-SwiftUI' do
   # Pods for InabaFlippingCardGame-SwiftUI
 
   pod 'Firebase/Firestore'
+  pod 'Firebase/Analytics'
+
 
   target 'InabaFlippingCardGame-SwiftUITests' do
     inherit! :search_paths
