@@ -22,18 +22,41 @@ struct LobbyPage: View {
             ZStack {
                 Color.green
                     .edgesIgnoringSafeArea(.all)
-                VStack{
-//                    Rectangle()
-//                        .foregroundColor(.green)
-//                        .frame(height: 30)
-                    TextField("ニックネーム",
-                              text: $playerName
-                    ).textFieldStyle(RoundedBorderTextFieldStyle())
-                        .frame(width: 150, height: 35, alignment: .trailing)
-                        .padding(.leading, 160)
+                VStack(){
+                    HStack{
+                        Rectangle()
+                            .foregroundColor(Color.green)
+                            .frame(width: 170, height: 0)
+                        VStack{
+                            HStack{
+                                Rectangle()
+                                .foregroundColor(Color.clear)
+                                .frame(width: 0, height: 0)
+                                //ZStackでTextを重ねてカスタム色のプレースホルダーを自作
+                                ZStack(alignment: .leading){
+                                    if playerName.isEmpty {
+                                        
+                                        Text("ニックネーム未設定")
+                                            .foregroundColor(.white)
+                                            .font(.system(size: 15, weight: .light, design: .default))
+                                        
+                                    }
+                                    TextField("", text: $playerName)
+                                }
+                                Rectangle()
+                                .foregroundColor(Color.clear)
+                                .frame(width: 0, height: 0)
+                            }
+                            Rectangle()
+                                .foregroundColor(Color.white)
+                                .frame(height: 1)
+                        }
+                    }
+//                        .frame(width: 150, height: 35, alignment: .trailing)
+//                        .padding(.leading, 160)
                     Text("ひとりで遊ぶ")
                         .foregroundColor(.white)
-                        .font(.system(size: 24, weight: .black, design: .default))
+                        .font(.system(size: 23, weight: .black, design: .default))
                         .frame(width: 320, height: 30, alignment: .leading)
                         
                     Rectangle()
@@ -53,19 +76,27 @@ struct LobbyPage: View {
                     }
                     .background(Color.white)
                     .accentColor(Color.black)
+                    .opacity(0.9)
                         
                     Text("オンラインで遊ぶ")
                         .foregroundColor(.white)
-                        .font(.system(size: 24, weight: .black, design: .default))
+                        .font(.system(size: 23, weight: .black, design: .default))
                         .frame(width: 320, height: 30, alignment: .leading)
                         
                     Rectangle()
                         .foregroundColor(.white)
                         .frame(height: 2.5)
+                    
+//                    List() { item in
+                        
+//                    }
                     Spacer();Spacer();Spacer();Spacer()
-                    }
-//                .padding(.top, 20)
-                .padding(.all, 20)
+                }
+                .padding(.top, 10)
+                .padding(.leading, 20)
+                .padding(.trailing, 20)
+                .padding(.bottom, 20)
+
                 .navigationBarTitle("ロビー«SwiftUI»", displayMode: .inline)
             }
 //            .edgesIgnoringSafeArea()
