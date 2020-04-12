@@ -107,10 +107,22 @@ struct LobbyPage: View {
                             .frame(width: 300, height: 2)
                     }
                     List() {
-                        NavigationLink(destination: PlayGameFirestoreOnlinePage()) {
+                        Section(header: Text("新しいルームを作る")
+                            .font(.system(size: 16, weight: .semibold, design: .default))
+                            .foregroundColor(Color.black)
+                        ) {
+//                            RoomListCell()
+                            Text(" ＋ 今すぐ作成")
+                        }
+                        Section(header: Text("だれかのゲームに参加する")
+                            .font(.system(size: 16, weight: .semibold, design: .default))
+                        .foregroundColor(Color.black)) {
+                            RoomListCell()
+                            RoomListCell()
                             RoomListCell()
                         }
-                    }.background(RoundedRectangle(cornerRadius: 15).foregroundColor(.gray))
+                    }.listStyle(PlainListStyle())
+//                        .environment(\.horizontalSizeClass, .regular)
                     
                 }
                 .padding(.top, 10)

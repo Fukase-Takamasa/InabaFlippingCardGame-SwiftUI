@@ -14,8 +14,10 @@ var roomList = ["ルーム1(デフォ)", "ルーム2(デフォ)", "ルーム3(�
     
     var body: some View {
         HStack {
-            Text(roomList[0])
-            Spacer()
+            NavigationLink(destination: PlayGameFirestoreOnlinePage()) {
+                Text(roomList[0])
+                Spacer()
+            }
         }
     }
 }
