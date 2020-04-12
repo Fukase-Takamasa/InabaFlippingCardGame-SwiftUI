@@ -22,6 +22,7 @@
 		5945FFF3241B76AA0072E035 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5945FFF1241B76AA0072E035 /* LaunchScreen.storyboard */; };
 		5945FFFE241B76AA0072E035 /* InabaFlippingCardGame_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5945FFFD241B76AA0072E035 /* InabaFlippingCardGame_SwiftUITests.swift */; };
 		595C4437244312DF00FBD4E4 /* RoomListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595C4436244312DF00FBD4E4 /* RoomListCell.swift */; };
+		595C443B24433DE300FBD4E4 /* OnlineCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595C443A24433DE300FBD4E4 /* OnlineCardCell.swift */; };
 		59E27614244227D1003F3239 /* PlayGameFightWithYourSelfPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E27613244227D1003F3239 /* PlayGameFightWithYourSelfPage.swift */; };
 		59E2761624422854003F3239 /* PlayGameFirestoreOnlinePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E2761524422854003F3239 /* PlayGameFirestoreOnlinePage.swift */; };
 		59E27618244228A5003F3239 /* FirestoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E27617244228A5003F3239 /* FirestoreViewModel.swift */; };
@@ -70,6 +71,7 @@
 		5945FFFD241B76AA0072E035 /* InabaFlippingCardGame_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InabaFlippingCardGame_SwiftUITests.swift; sourceTree = "<group>"; };
 		5945FFFF241B76AA0072E035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		595C4436244312DF00FBD4E4 /* RoomListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListCell.swift; sourceTree = "<group>"; };
+		595C443A24433DE300FBD4E4 /* OnlineCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineCardCell.swift; sourceTree = "<group>"; };
 		59E27613244227D1003F3239 /* PlayGameFightWithYourSelfPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayGameFightWithYourSelfPage.swift; sourceTree = "<group>"; };
 		59E2761524422854003F3239 /* PlayGameFirestoreOnlinePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayGameFirestoreOnlinePage.swift; sourceTree = "<group>"; };
 		59E27617244228A5003F3239 /* FirestoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreViewModel.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				59E27613244227D1003F3239 /* PlayGameFightWithYourSelfPage.swift */,
 				59E2761524422854003F3239 /* PlayGameFirestoreOnlinePage.swift */,
 				59E2761C2442B5FD003F3239 /* CardCell.swift */,
+				595C443A24433DE300FBD4E4 /* OnlineCardCell.swift */,
 				59E27617244228A5003F3239 /* FirestoreViewModel.swift */,
 				5945FFEC241B76AA0072E035 /* Assets.xcassets */,
 				5945FFF1241B76AA0072E035 /* LaunchScreen.storyboard */,
@@ -474,6 +477,7 @@
 				5945FFEB241B76A70072E035 /* ContentView.swift in Sources */,
 				595C4437244312DF00FBD4E4 /* RoomListCell.swift in Sources */,
 				591F6BD72441D59C00D2ACB6 /* LobbyPage.swift in Sources */,
+				595C443B24433DE300FBD4E4 /* OnlineCardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

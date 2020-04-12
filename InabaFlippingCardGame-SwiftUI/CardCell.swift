@@ -10,12 +10,9 @@ import SwiftUI
 
 struct CardCell: View {
     
-//    let superView = PlayGameFightWithYourSelfPage()
     @Binding var inabaCards: [CardData]
     var cardData: CardData
     var index = 0
-//    var isOpened = false
-//    var isMatched = false
     
     var body: some View {
         returnImage(cardData: cardData, index: index)
@@ -25,13 +22,12 @@ struct CardCell: View {
             
             .onTapGesture {
                 self.inabaCards[0].isOpened.toggle()
-//                sampleCardDatas[self.index].isOpened = true
                 
         }
     }
 }
 
-func returnImage(cardData: CardData, index: Int) -> Image {
+private func returnImage(cardData: CardData, index: Int) -> Image {
     if cardData.isMatched || cardData.isOpened {
         return Image(cardData.imageName)
     }else {
@@ -41,10 +37,6 @@ func returnImage(cardData: CardData, index: Int) -> Image {
             return Image("CardBackImageBlue")
         }
     }
-}
-
-func tappedCard(index: Int) {
-    
 }
 
 //struct CardCell_Previews: PreviewProvider {
