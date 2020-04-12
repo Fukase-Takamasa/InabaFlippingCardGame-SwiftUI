@@ -106,15 +106,17 @@ struct LobbyPage: View {
                             .foregroundColor(.white)
                             .frame(width: 300, height: 2)
                     }
-//                    List() { item in
-                        
-//                    }
-                    Spacer();Spacer();Spacer();Spacer()
+                    List() {
+                        NavigationLink(destination: PlayGameFirestoreOnlinePage()) {
+                            RoomListCell()
+                        }
+                    }.background(RoundedRectangle(cornerRadius: 15).foregroundColor(.gray))
+                    
                 }
                 .padding(.top, 10)
                 .padding(.leading, 20)
                 .padding(.trailing, 20)
-                .padding(.bottom, 20)
+                .padding(.bottom, 30)
 
                 .navigationBarTitle("ロビー«SwiftUI»", displayMode: .inline)
             }
