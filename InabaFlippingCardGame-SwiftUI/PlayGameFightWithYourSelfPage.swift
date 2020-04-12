@@ -107,6 +107,11 @@ struct PlayGameFightWithYourSelfPage: View {
                 .navigationBarItems(leading: backButton) //上で自作したカスタム戻るボタンを設置
             
         }
+        .onAppear(perform: shuffleCards)
+    }
+    
+    func shuffleCards() {
+        self.inabaCards.shuffle()
     }
 }
 

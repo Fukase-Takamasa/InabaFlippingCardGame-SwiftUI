@@ -10,7 +10,6 @@ import SwiftUI
 
 struct OnlineCardCell: View {
     
-//        @Binding var inabaCards: [CardData]
         var cardData: CardData
         var index = 0
         
@@ -19,9 +18,9 @@ struct OnlineCardCell: View {
                 .resizable()
                 .scaledToFit()
 
-//                .onTapGesture {
+//          .onTapGesture {
 //                    self.inabaCards[0].isOpened.toggle()
-//            }
+//          }
         }
     }
 
