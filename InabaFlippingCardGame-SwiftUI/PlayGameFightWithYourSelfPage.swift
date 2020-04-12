@@ -60,13 +60,13 @@ struct PlayGameFightWithYourSelfPage: View {
                         //CollectionView的なライブラリ
                         QGrid(sampleCardDatas,
                               columns: 6,
-                              vSpacing: 0,
-                              hSpacing: -5,
+                              vSpacing: 10,
+                              hSpacing: 6,
                               vPadding: 0,
                               hPadding: 0) { cardData in
                                 CardCell(cardData: cardData)}
                     }
-                    .padding(.all, 12)
+                    .padding(.all, 18)
                     .padding(.top, 80)
                 }
                 .navigationBarTitle("自分との戦い部屋", displayMode: .inline)

@@ -17,7 +17,6 @@ struct CardCell: View {
             Image(cardData.imageName)
                 .resizable()
                 .scaledToFit()
-                .padding([.horizontal, .top], 7)
         }
     }
 }

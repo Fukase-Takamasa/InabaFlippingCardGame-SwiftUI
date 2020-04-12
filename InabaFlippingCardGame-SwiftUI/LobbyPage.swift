@@ -25,70 +25,68 @@ struct LobbyPage: View {
             ZStack {
                 Color(red: 44/255, green: 113/255, blue: 44/255)
                     .edgesIgnoringSafeArea(.all)
-                VStack(){
-                    HStack{
-                        Rectangle()
-                            .foregroundColor(Color.green)
-                            .frame(width: 170, height: 0)
-                        VStack{
-                            HStack{
-                                Rectangle()
-                                .foregroundColor(Color.clear)
-                                .frame(width: 0, height: 0)
-                                //ZStackでTextを重ねてカスタム色のプレースホルダーを自作
-                                ZStack(alignment: .leading){
-                                    if playerName.isEmpty {
-                                        
-                                        Text("ニックネーム未設定")
+                VStack(alignment: .leading, spacing: 12){
+
+                    VStack(alignment: .leading, spacing: 5) {
+                        HStack(spacing: 0){
+                            Spacer()
+                            VStack(alignment: .center, spacing: 0){
+                                HStack(alignment: .center, spacing: 0){
+                                    //ZStackでTextを重ねてカスタム色のプレースホルダーを自作
+                                    ZStack(alignment: .leading){
+                                        if playerName.isEmpty {
+                                            Text("ニックネーム未設定")
+                                                .foregroundColor(.white)
+                                                .font(.system(size: 14, weight: .light, design: .default))
+                                        }
+                                        TextField("", text: $playerName)
+                                            .accentColor(.orange)
                                             .foregroundColor(.white)
-                                            .font(.system(size: 15, weight: .light, design: .default))
-                                        
-                                    }
-                                    TextField("", text: $playerName)
-                                        .accentColor(.orange)
-                                        .foregroundColor(.white)
-                                    .font(.system(size: 15, weight: .light, design: .default))
+                                        .font(.system(size: 14, weight: .light, design: .default))
+                                    }.frame(width: 136)
                                 }
                                 Rectangle()
-                                .foregroundColor(Color.clear)
-                                .frame(width: 0, height: 0)
-                            }
-                            Rectangle()
-                                .foregroundColor(Color.white)
-                                .frame(height: 1)
+                                    .foregroundColor(Color.white)
+                                    .frame(height: 1)
+                            }.frame(width: 145)
                         }
+                        Text("ひとりで遊ぶ")
+                            .foregroundColor(.white)
+                            .font(.system(size: 23, weight: .medium, design: .default))
+                            .frame(height: 25, alignment: .leading)
+                        Rectangle()
+                            .foregroundColor(.white)
+                            .frame(width: 300, height: 2)
                     }
-                    Text("ひとりで遊ぶ")
-                        .foregroundColor(.white)
-                        .font(.system(size: 23, weight: .black, design: .default))
-                        .frame(width: 320, height: 30, alignment: .leading)
-                    Rectangle()
-                        .foregroundColor(.white)
-                        .frame(height: 2.5)
-                    VStack{
+                    HStack{
                         NavigationLink(destination: PlayGameFightWithYourSelfPage()) {
-                            HStack{
-                                Image(systemName: "person")
-                                    .foregroundColor(.black)
-                                    .imageScale(.large)
-                                Text("自分との戦い")
-                                    .font(.system(size: 20, weight: .semibold, design: .default))
+                            HStack(alignment: .center){
+                                Spacer()
+                                HStack{
+                                    Image(systemName: "person")
+                                        .imageScale(.large)
+                                    Text("自分との戦い")
+                                        .font(.system(size: 20, weight: .semibold, design: .default))
+                                }
+                                .frame(width: 240, height: 52, alignment: .center)
+                                .background(RoundedRectangle(cornerRadius: 15).fill(Color.white))
+                                .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.gray, lineWidth: 1))
+                                .accentColor(Color.black)
+                                .opacity(0.9)
+                                Spacer()
                             }
-                            .frame(width: 240, height: 45, alignment: .center)
-                            .background(Color.white)
-                            .accentColor(Color.black)
-                            .opacity(0.9)
                         }
                     }
-                    Text("オンラインで遊ぶ")
-                        .foregroundColor(.white)
-                        .font(.system(size: 23, weight: .black, design: .default))
-                        .frame(width: 320, height: 30, alignment: .leading)
-                    
-                    Rectangle()
-                        .foregroundColor(.white)
-                        .frame(height: 2.5)
-                    
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text("オンラインで遊ぶ")
+                            .foregroundColor(.white)
+                            .font(.system(size: 23, weight: .medium, design: .default))
+                            .frame(height: 25, alignment: .leading)
+                        
+                        Rectangle()
+                            .foregroundColor(.white)
+                            .frame(width: 300, height: 2)
+                    }
 //                    List() { item in
                         
 //                    }
