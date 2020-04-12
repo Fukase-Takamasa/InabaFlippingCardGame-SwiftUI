@@ -62,17 +62,36 @@ struct LobbyPage: View {
                         NavigationLink(destination: PlayGameFightWithYourSelfPage()) {
                             HStack(alignment: .center){
                                 Spacer()
-                                HStack{
+                                HStack(spacing: 4) {
                                     Image(systemName: "person")
                                         .imageScale(.large)
                                     Text("自分との戦い")
-                                        .font(.system(size: 20, weight: .semibold, design: .default))
+                                        .font(.system(size: 21, weight: .semibold, design: .default))
                                 }
-                                .frame(width: 240, height: 52, alignment: .center)
+                                .frame(width: 255, height: 52, alignment: .center)
                                 .background(RoundedRectangle(cornerRadius: 15).fill(Color.white))
                                 .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.gray, lineWidth: 1))
                                 .accentColor(Color.black)
-                                .opacity(0.9)
+                                .opacity(0.85)
+                                Spacer()
+                            }
+                        }
+                    }
+                    HStack{
+                        NavigationLink(destination: PlayGameFightWithYourSelfPage()) {
+                            HStack(alignment: .center){
+                                Spacer()
+                                HStack(spacing: 4){
+                                    Image(systemName: "desktopcomputer")
+                                        .imageScale(.medium)
+                                    Text("コンピュータと対戦")
+                                        .font(.system(size: 21, weight: .semibold, design: .default))
+                                }
+                                .frame(width: 255, height: 52, alignment: .center)
+                                .background(RoundedRectangle(cornerRadius: 15).fill(Color.white))
+                                .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.gray, lineWidth: 1))
+                                .accentColor(Color.black)
+                                .opacity(0.85)
                                 Spacer()
                             }
                         }
