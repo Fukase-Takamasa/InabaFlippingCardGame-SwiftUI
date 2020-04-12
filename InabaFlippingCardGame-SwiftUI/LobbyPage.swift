@@ -18,7 +18,6 @@ struct LobbyPage: View {
     
     var body: some View {
         NavigationView {
-            
             ZStack {
                 Color(red: 44/255, green: 113/255, blue: 44/255)
                     .edgesIgnoringSafeArea(.all)
@@ -59,31 +58,29 @@ struct LobbyPage: View {
                         .foregroundColor(.white)
                         .font(.system(size: 23, weight: .black, design: .default))
                         .frame(width: 320, height: 30, alignment: .leading)
-                        
                     Rectangle()
                         .foregroundColor(.white)
                         .frame(height: 2.5)
-                    Button(action: {
-                        
-                    }){
-                        HStack{
-                            Image(systemName: "person")
-                            .foregroundColor(.black)
-                            .imageScale(.large)
-                                
-                            Text("自分との戦い")
-                                .font(.system(size: 20, weight: .semibold, design: .default))
-                        }.frame(width: 240, height: 45, alignment: .center)
+                    VStack{
+                        NavigationLink(destination: PlayGameFightWithYourSelfPage()) {
+                            HStack{
+                                Image(systemName: "person")
+                                    .foregroundColor(.black)
+                                    .imageScale(.large)
+                                Text("自分との戦い")
+                                    .font(.system(size: 20, weight: .semibold, design: .default))
+                            }
+                            .frame(width: 240, height: 45, alignment: .center)
+                            .background(Color.white)
+                            .accentColor(Color.black)
+                            .opacity(0.9)
+                        }
                     }
-                    .background(Color.white)
-                    .accentColor(Color.black)
-                    .opacity(0.9)
-                        
                     Text("オンラインで遊ぶ")
                         .foregroundColor(.white)
                         .font(.system(size: 23, weight: .black, design: .default))
                         .frame(width: 320, height: 30, alignment: .leading)
-                        
+                    
                     Rectangle()
                         .foregroundColor(.white)
                         .frame(height: 2.5)
