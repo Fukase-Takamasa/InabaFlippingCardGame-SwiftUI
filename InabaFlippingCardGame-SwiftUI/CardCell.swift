@@ -7,15 +7,26 @@
 //
 
 import SwiftUI
+//import QGrid
 
 struct CardCell: View {
+    
+    var cardData: CardData
+    
     var body: some View {
-        
+        VStack {
+            Image(cardData.imageName)
+                .resizable()
+                .scaledToFit()
+                .padding([.horizontal, .top], 7)
+        }
     }
 }
 
 struct CardCell_Previews: PreviewProvider {
     static var previews: some View {
-        CardCell()
+        List(0..<(sampleCardDatas.count)) { item in
+            CardCell(cardData: sampleCardDatas[item])
+        }
     }
 }

@@ -7,10 +7,29 @@
 //
 
 import SwiftUI
+import QGrid
 
 struct PlayGameFightWithYourSelfPage: View {
+    
+    init() {
+        UINavigationBar.appearance().backgroundColor = .clear
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ZStack {
+                Color(red: 255/255, green: 192/255, blue: 0/255)
+                    .edgesIgnoringSafeArea(.all)
+                QGrid(sampleCardDatas,
+                  columns: 6,
+                  vSpacing: 0,
+                  hSpacing: 0,
+                  vPadding: 0,
+                  hPadding: 0) { cardData in
+                CardCell(cardData: cardData)}
+            }
+            .navigationBarTitle("自分との戦い部屋", displayMode: .inline)
+        }
     }
 }
 
