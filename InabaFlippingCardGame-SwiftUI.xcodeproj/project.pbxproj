@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,7 @@
 		59E27614244227D1003F3239 /* PlayGameFightWithYourSelfPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E27613244227D1003F3239 /* PlayGameFightWithYourSelfPage.swift */; };
 		59E2761624422854003F3239 /* PlayGameFirestoreOnlinePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E2761524422854003F3239 /* PlayGameFirestoreOnlinePage.swift */; };
 		59E27618244228A5003F3239 /* FirestoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E27617244228A5003F3239 /* FirestoreViewModel.swift */; };
+		59E2761B2442B53F003F3239 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 59E2761A2442B53F003F3239 /* QGrid */; };
 		CFEDFDE41E2647AEB018037C /* Pods_InabaFlippingCardGame_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89C8218C41D34923FB99537 /* Pods_InabaFlippingCardGame_SwiftUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59E2761B2442B53F003F3239 /* QGrid in Frameworks */,
 				47D7A15DD0E06BD1A4AB50CE /* Pods_InabaFlippingCardGame_SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +237,9 @@
 			dependencies = (
 			);
 			name = "InabaFlippingCardGame-SwiftUI";
+			packageProductDependencies = (
+				59E2761A2442B53F003F3239 /* QGrid */,
+			);
 			productName = "InabaFlippingCardGame-SwiftUI";
 			productReference = 5945FFE3241B76A70072E035 /* InabaFlippingCardGame-SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -290,6 +295,9 @@
 				Base,
 			);
 			mainGroup = 5945FFDA241B76A70072E035;
+			packageReferences = (
+				59E276192442B53E003F3239 /* XCRemoteSwiftPackageReference "QGrid" */,
+			);
 			productRefGroup = 5945FFE4241B76A70072E035 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -778,6 +786,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		59E276192442B53E003F3239 /* XCRemoteSwiftPackageReference "QGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Q-Mobile/QGrid";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		59E2761A2442B53F003F3239 /* QGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 59E276192442B53E003F3239 /* XCRemoteSwiftPackageReference "QGrid" */;
+			productName = QGrid;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5945FFDB241B76A70072E035 /* Project object */;
 }
