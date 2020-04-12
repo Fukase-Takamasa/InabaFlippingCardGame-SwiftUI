@@ -11,6 +11,39 @@ import QGrid
 
 struct PlayGameFightWithYourSelfPage: View {
     
+    @State private var inabaCards: [CardData] = [
+        CardData(id: "1", imageName: "ina1", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina2", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina3", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina4", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina5", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina6", isOpened: true, isMatched: false),
+        CardData(id: "1", imageName: "ina7", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina8", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina9", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina10", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina11", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina12", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina13", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina14", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina15", isOpened: true, isMatched: false),
+        CardData(id: "1", imageName: "ina1", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina2", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina3", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina4", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina5", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina6", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina7", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina8", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina9", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina10", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina11", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina12", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina13", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina14", isOpened: false, isMatched: false),
+        CardData(id: "1", imageName: "ina15", isOpened: false, isMatched: false),
+    ]
+
     @State private var turnCount = 99
     
     init() {
@@ -58,13 +91,13 @@ struct PlayGameFightWithYourSelfPage: View {
                             }
                         }
                         //CollectionView的なライブラリ
-                        QGrid(sampleCardDatas,
+                        QGrid(inabaCards,
                               columns: 6,
                               vSpacing: 10,
                               hSpacing: 6,
                               vPadding: 0,
                               hPadding: 0) { cardData in
-                                CardCell(cardData: cardData, index: 1)}
+                                CardCell(inabaCards: self.$inabaCards, cardData: cardData, index: 0)}
                     }
                     .padding(.all, 18)
                     .padding(.top, 40)

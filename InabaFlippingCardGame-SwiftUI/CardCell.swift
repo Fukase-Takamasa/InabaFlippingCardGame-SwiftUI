@@ -10,8 +10,8 @@ import SwiftUI
 
 struct CardCell: View {
     
-
-    
+//    let superView = PlayGameFightWithYourSelfPage()
+    @Binding var inabaCards: [CardData]
     var cardData: CardData
     var index = 0
 //    var isOpened = false
@@ -22,8 +22,11 @@ struct CardCell: View {
             .resizable()
             .scaledToFit()
             
+            
             .onTapGesture {
-                sampleCardDatas[self.index].isOpened = true
+                self.inabaCards[0].isOpened.toggle()
+//                sampleCardDatas[self.index].isOpened = true
+                
         }
     }
 }
