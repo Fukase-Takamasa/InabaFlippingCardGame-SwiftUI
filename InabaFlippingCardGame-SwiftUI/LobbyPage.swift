@@ -37,7 +37,8 @@ struct LobbyPage: View {
                                         if playerName.isEmpty {
                                             Text("ニックネーム未設定")
                                                 .foregroundColor(.white)
-                                                .font(.system(size: 14, weight: .light, design: .default))
+                                                .font(.system(size: 14, weight: .regular, design: .default))
+                                                .opacity(0.6)
                                         }
                                         TextField("", text: $playerName)
                                             .accentColor(.orange)
@@ -72,7 +73,7 @@ struct LobbyPage: View {
                                 .background(RoundedRectangle(cornerRadius: 15).fill(Color.white))
                                 .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.gray, lineWidth: 1))
                                 .accentColor(Color.black)
-                                .opacity(0.85)
+                                .opacity(0.9)
                                 Spacer()
                             }
                         }
@@ -91,7 +92,7 @@ struct LobbyPage: View {
                                 .background(RoundedRectangle(cornerRadius: 15).fill(Color.white))
                                 .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.gray, lineWidth: 1))
                                 .accentColor(Color.black)
-                                .opacity(0.85)
+                                .opacity(0.9)
                                 Spacer()
                             }
                         }
