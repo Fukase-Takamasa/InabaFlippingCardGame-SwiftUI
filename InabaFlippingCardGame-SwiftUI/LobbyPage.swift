@@ -122,6 +122,7 @@ struct LobbyPage: View {
                             RoomListCell()
                         }
                     }.listStyle(PlainListStyle())
+                        .padding(.horizontal, 9)
 //                        .environment(\.horizontalSizeClass, .regular)
                     
                 }
