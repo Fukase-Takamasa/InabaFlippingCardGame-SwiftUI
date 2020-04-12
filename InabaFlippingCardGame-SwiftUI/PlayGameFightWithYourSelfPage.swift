@@ -64,10 +64,10 @@ struct PlayGameFightWithYourSelfPage: View {
                               hSpacing: 6,
                               vPadding: 0,
                               hPadding: 0) { cardData in
-                                CardCell(cardData: cardData)}
+                                CardCell(cardData: cardData, index: 1)}
                     }
                     .padding(.all, 18)
-                    .padding(.top, 80)
+                    .padding(.top, 40)
                 }
                 .navigationBarTitle("自分との戦い部屋", displayMode: .inline)
                 .navigationBarBackButtonHidden(true)

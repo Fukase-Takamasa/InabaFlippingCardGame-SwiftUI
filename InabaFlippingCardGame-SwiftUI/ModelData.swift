@@ -21,13 +21,13 @@ struct CardData: Identifiable {
     var isMatched: Bool
 }
 
-let sampleCardDatas: [CardData] = [
+var sampleCardDatas: [CardData] = [
     CardData(id: "1", imageName: "ina1", isOpened: false, isMatched: false),
     CardData(id: "1", imageName: "ina2", isOpened: false, isMatched: false),
     CardData(id: "1", imageName: "ina3", isOpened: false, isMatched: false),
     CardData(id: "1", imageName: "ina4", isOpened: false, isMatched: false),
     CardData(id: "1", imageName: "ina5", isOpened: false, isMatched: false),
-    CardData(id: "1", imageName: "ina6", isOpened: false, isMatched: false),
+    CardData(id: "1", imageName: "ina6", isOpened: true, isMatched: false),
     CardData(id: "1", imageName: "ina7", isOpened: false, isMatched: false),
     CardData(id: "1", imageName: "ina8", isOpened: false, isMatched: false),
     CardData(id: "1", imageName: "ina9", isOpened: false, isMatched: false),
