@@ -97,7 +97,7 @@ struct PlayGameFightWithYourSelfPage: View {
                               hSpacing: 6,
                               vPadding: 0,
                               hPadding: 0) { cardData in
-                                CardCell(inabaCards: self.$inabaCards, cardData: cardData, index: 0)}
+                                CardCell(inabaCards: self.$inabaCards, cardData: cardData, index: 1)}
                     }
                     .padding(.all, 18)
                     .padding(.top, 40)
