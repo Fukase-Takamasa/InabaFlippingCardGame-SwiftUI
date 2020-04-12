@@ -10,6 +10,10 @@ import SwiftUI
 
 struct LobbyPage: View {
     
+    //@State private var navigationLinkIsActive = false
+    //↑コードで遷移にしたいときはNavigationLinkの引数isActiveに↑のBoolを設定し、
+    //ButtonActionの中などでself.navigationLinkIsActiveをtrueにしてトリガーにする
+    
     @State private var playerName = ""
     
     init() {
