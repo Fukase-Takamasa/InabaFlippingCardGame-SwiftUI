@@ -9,6 +9,7 @@
 import Foundation
 
 struct Rooms {
+    var id: String
     var documentID: String
     var roomName: String
     var playerCount: Int

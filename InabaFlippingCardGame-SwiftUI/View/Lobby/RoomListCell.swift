@@ -10,12 +10,13 @@ import SwiftUI
 
 struct RoomListCell: View {
     
-var roomList = ["ルーム1(デフォ)", "ルーム2(デフォ)", "ルーム3(デフォ)"]
+//var roomList = ["ルーム1(デフォ)", "ルーム2(デフォ)", "ルーム3(デフォ)"]
+    var room: Rooms
     
     var body: some View {
         HStack {
             NavigationLink(destination: PlayGameFirestoreOnlinePage()) {
-                Text(roomList[0])
+                Text(room.roomName)
                 Rectangle().frame(width: 40, height: 0)
                 Text("参加する").background(
                 RoundedRectangle(cornerRadius: 10)
@@ -26,10 +27,15 @@ var roomList = ["ルーム1(デフォ)", "ルーム2(デフォ)", "ルーム3(�
             }
         }
     }
-}
-
-struct RoomListCell_Previews: PreviewProvider {
-    static var previews: some View {
-        RoomListCell()
+    
+    
+    private func setupCell() {
+        
     }
 }
+
+//struct RoomListCell_Previews: PreviewProvider {
+//    static var previews: some View {
+//        RoomListCell(room: Rooms)
+//    }
+//}

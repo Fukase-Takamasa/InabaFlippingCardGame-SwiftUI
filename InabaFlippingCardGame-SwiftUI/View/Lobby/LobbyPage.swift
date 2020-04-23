@@ -14,6 +14,8 @@ struct LobbyPage: View {
     //↑コードで遷移にしたいときはNavigationLinkの引数isActiveに↑のBoolを設定し、
     //ButtonActionの中などでself.navigationLinkIsActiveをtrueにしてトリガーにする
     
+    @ObservedObject var lobbyFirestoreVM = LobbyFirestoreVM()
+    
     @State private var playerName = ""
     
     init() {
@@ -108,22 +110,25 @@ struct LobbyPage: View {
                         .foregroundColor(.white)
                         .frame(width: 300, height: 2)
                 }
-                List() {
-                    Section(header: Text("新しいルームを作る")
-                        .font(.system(size: 16, weight: .semibold, design: .default))
-                        .foregroundColor(Color.black)
-                    ) {
-//                            RoomListCell()
-                        Text(" ＋ 今すぐ作成")
-                    }
-                    Section(header: Text("だれかのゲームに参加する")
-                        .font(.system(size: 16, weight: .semibold, design: .default))
-                    .foregroundColor(Color.black)) {
-                        RoomListCell()
-                        RoomListCell()
-                        RoomListCell()
-                    }
-                }.listStyle(PlainListStyle())
+                List(self.lobbyFirestoreVM.rooms, id: \.id) { room in
+//                    Section(header: Text("新しいルームを作る")
+//                        .font(.system(size: 16, weight: .semibold, design: .default))
+//                        .foregroundColor(Color.black)
+//                    ) {
+//                        Text(" ＋ 今すぐ作成")
+//                    }
+//                    Section(header: Text("だれかのゲームに参加する")
+//                        .font(.system(size: 16, weight: .semibold, design: .default))
+//                    .foregroundColor(Color.black)) {
+//                        //セルをreturnする
+//                        RoomListCell(room: room)
+//                    }
+                    
+                    RoomListCell(room: room)
+
+                    
+                }.cornerRadius(15)
+                .listStyle(PlainListStyle())
                     .padding(.horizontal, 9)
 //                        .environment(\.horizontalSizeClass, .regular)
                 
@@ -137,6 +142,10 @@ struct LobbyPage: View {
         }//Zstack
         }//GeometryReader
         }// Navi
+    }
+    
+    private func goToGamePage() {
+        
     }
 }
 

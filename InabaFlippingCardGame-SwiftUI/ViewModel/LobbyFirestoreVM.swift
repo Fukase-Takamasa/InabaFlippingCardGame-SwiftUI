@@ -25,9 +25,9 @@ class LobbyFirestoreVM: ObservableObject {
             self.rooms = snapshot.documents.map { data -> Rooms in
                 guard let roomName = data.data()["roomName"] else {
                     print("roomNameアンラップ失敗")
-                    return Rooms(documentID: "nil", roomName: "nil", playerCount: 0)
+                    return Rooms(id: "", documentID: "", roomName: "", playerCount: 0)
                 }
-                return Rooms(documentID: data.documentID, roomName: roomName as! String, playerCount: data.data().count - 3)
+                return Rooms(id: data.documentID, documentID: data.documentID, roomName: roomName as! String, playerCount: data.data().count - 3)
             }
         }
         
