@@ -14,28 +14,36 @@ struct RoomListCell: View {
     var room: Rooms
     
     var body: some View {
-        HStack {
+        HStack(spacing: 0) {
             NavigationLink(destination: PlayGameFirestoreOnlinePage()) {
                 Text(room.roomName)
-                Rectangle().frame(width: 40, height: 0)
-                Text("参加する").background(
-                RoundedRectangle(cornerRadius: 10)
-                    .fill(Color(red: 90/255, green: 200/255, blue: 250/255))
-                    .frame(width: 90, height: 32))
-                    .foregroundColor(.white)
-                    .font(.system(size: 18, weight: .medium, design: .default))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                Text("\(room.playerCount)/2人 ")
+                if room.playerCount < 2 {
+                    Text("参加する").frame(width: 90)
+                        .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color(red: 90/255, green: 200/255, blue: 250/255))
+                        .frame(width: 90, height: 32))
+                        .foregroundColor(.white)
+                        .font(.system(size: 18, weight: .medium, design: .default))
+                }else {
+                    Text("満室").frame(width: 90)
+                        .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color(red: 255/255, green: 149/255, blue: 0/255))
+                        .frame(width: 90, height: 32))
+                        .foregroundColor(.white)
+                        .font(.system(size: 18, weight: .medium, design: .default))
+                }
             }
-        }
-    }
-    
-    
-    private func setupCell() {
-        
+        }.frame(height: 40)
     }
 }
 
-//struct RoomListCell_Previews: PreviewProvider {
-//    static var previews: some View {
-//        RoomListCell(room: Rooms)
-//    }
-//}
+struct RoomListCell_Previews: PreviewProvider {
+    static var previews: some View {
+        let sampleRoom = Rooms(id: "", documentID: "", roomName: "サンプル部屋", playerCount: 2)
+        return RoomListCell(room: sampleRoom)
+    }
+}
