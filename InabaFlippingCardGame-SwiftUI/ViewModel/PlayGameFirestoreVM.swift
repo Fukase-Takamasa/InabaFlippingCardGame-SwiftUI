@@ -1,5 +1,5 @@
 //
-//  FirestoreViewModel.swift
+//  PlayGameFirestoreVM.swift
 //  InabaFlippingCardGame-SwiftUI
 //
 //  Created by 深瀬 貴将 on 2020/04/12.
@@ -9,7 +9,7 @@
 import Foundation
 import Firebase
 
-class FirestoreViewModel: ObservableObject {
+class PlayGameFirestoreVM: ObservableObject {
     @Published var inabaCards = [CardData]()
     
     init() {

@@ -13,6 +13,7 @@
 		591F6BD924421EE800D2ACB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 591F6BD824421EE800D2ACB6 /* GoogleService-Info.plist */; };
 		591F6BDB24421EF200D2ACB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 591F6BDA24421EF200D2ACB6 /* GoogleService-Info.plist */; };
 		591F6BDD24421EF700D2ACB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 591F6BDC24421EF700D2ACB6 /* GoogleService-Info.plist */; };
+		592490372451F6F800C3BCAA /* LobbyFirestoreVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592490362451F6F800C3BCAA /* LobbyFirestoreVM.swift */; };
 		59450009241B76AA0072E035 /* InabaFlippingCardGame_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59450008241B76AA0072E035 /* InabaFlippingCardGame_SwiftUIUITests.swift */; };
 		5945FFE7241B76A70072E035 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5945FFE6241B76A70072E035 /* AppDelegate.swift */; };
 		5945FFE9241B76A70072E035 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5945FFE8241B76A70072E035 /* SceneDelegate.swift */; };
@@ -25,7 +26,7 @@
 		595C443B24433DE300FBD4E4 /* OnlineCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595C443A24433DE300FBD4E4 /* OnlineCardCell.swift */; };
 		59E27614244227D1003F3239 /* PlayGameFightWithYourSelfPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E27613244227D1003F3239 /* PlayGameFightWithYourSelfPage.swift */; };
 		59E2761624422854003F3239 /* PlayGameFirestoreOnlinePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E2761524422854003F3239 /* PlayGameFirestoreOnlinePage.swift */; };
-		59E27618244228A5003F3239 /* FirestoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E27617244228A5003F3239 /* FirestoreViewModel.swift */; };
+		59E27618244228A5003F3239 /* PlayGameFirestoreVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E27617244228A5003F3239 /* PlayGameFirestoreVM.swift */; };
 		59E2761B2442B53F003F3239 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 59E2761A2442B53F003F3239 /* QGrid */; };
 		59E2761D2442B5FD003F3239 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E2761C2442B5FD003F3239 /* CardCell.swift */; };
 		59E2761F2442B66D003F3239 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E2761E2442B66D003F3239 /* ModelData.swift */; };
@@ -56,6 +57,7 @@
 		591F6BD824421EE800D2ACB6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		591F6BDA24421EF200D2ACB6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		591F6BDC24421EF700D2ACB6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		592490362451F6F800C3BCAA /* LobbyFirestoreVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyFirestoreVM.swift; sourceTree = "<group>"; };
 		59450004241B76AA0072E035 /* InabaFlippingCardGame-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "InabaFlippingCardGame-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59450008241B76AA0072E035 /* InabaFlippingCardGame_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InabaFlippingCardGame_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		5945000A241B76AA0072E035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,7 +76,7 @@
 		595C443A24433DE300FBD4E4 /* OnlineCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineCardCell.swift; sourceTree = "<group>"; };
 		59E27613244227D1003F3239 /* PlayGameFightWithYourSelfPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayGameFightWithYourSelfPage.swift; sourceTree = "<group>"; };
 		59E2761524422854003F3239 /* PlayGameFirestoreOnlinePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayGameFirestoreOnlinePage.swift; sourceTree = "<group>"; };
-		59E27617244228A5003F3239 /* FirestoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreViewModel.swift; sourceTree = "<group>"; };
+		59E27617244228A5003F3239 /* PlayGameFirestoreVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayGameFirestoreVM.swift; sourceTree = "<group>"; };
 		59E2761C2442B5FD003F3239 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		59E2761E2442B66D003F3239 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		60CFC430578D352FA534BBCF /* Pods-InabaFlippingCardGame-SwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InabaFlippingCardGame-SwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-InabaFlippingCardGame-SwiftUITests/Pods-InabaFlippingCardGame-SwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +117,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		592490302451F5BD00C3BCAA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				592490362451F6F800C3BCAA /* LobbyFirestoreVM.swift */,
+				59E27617244228A5003F3239 /* PlayGameFirestoreVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		592490312451F5DB00C3BCAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				59E2761E2442B66D003F3239 /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		592490322451F5F100C3BCAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				592490332451F61900C3BCAA /* Lobby */,
+				592490352451F63300C3BCAA /* FightWithYourself */,
+				592490342451F63000C3BCAA /* FirestoreOnline */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		592490332451F61900C3BCAA /* Lobby */ = {
+			isa = PBXGroup;
+			children = (
+				591F6BD62441D59C00D2ACB6 /* LobbyPage.swift */,
+				595C4436244312DF00FBD4E4 /* RoomListCell.swift */,
+			);
+			path = Lobby;
+			sourceTree = "<group>";
+		};
+		592490342451F63000C3BCAA /* FirestoreOnline */ = {
+			isa = PBXGroup;
+			children = (
+				59E2761524422854003F3239 /* PlayGameFirestoreOnlinePage.swift */,
+				595C443A24433DE300FBD4E4 /* OnlineCardCell.swift */,
+			);
+			path = FirestoreOnline;
+			sourceTree = "<group>";
+		};
+		592490352451F63300C3BCAA /* FightWithYourself */ = {
+			isa = PBXGroup;
+			children = (
+				59E27613244227D1003F3239 /* PlayGameFightWithYourSelfPage.swift */,
+				59E2761C2442B5FD003F3239 /* CardCell.swift */,
+			);
+			path = FightWithYourself;
+			sourceTree = "<group>";
+		};
 		59450007241B76AA0072E035 /* InabaFlippingCardGame-SwiftUIUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,14 +209,9 @@
 				5945FFE6241B76A70072E035 /* AppDelegate.swift */,
 				5945FFE8241B76A70072E035 /* SceneDelegate.swift */,
 				5945FFEA241B76A70072E035 /* ContentView.swift */,
-				59E2761E2442B66D003F3239 /* ModelData.swift */,
-				591F6BD62441D59C00D2ACB6 /* LobbyPage.swift */,
-				595C4436244312DF00FBD4E4 /* RoomListCell.swift */,
-				59E27613244227D1003F3239 /* PlayGameFightWithYourSelfPage.swift */,
-				59E2761524422854003F3239 /* PlayGameFirestoreOnlinePage.swift */,
-				59E2761C2442B5FD003F3239 /* CardCell.swift */,
-				595C443A24433DE300FBD4E4 /* OnlineCardCell.swift */,
-				59E27617244228A5003F3239 /* FirestoreViewModel.swift */,
+				592490312451F5DB00C3BCAA /* Model */,
+				592490302451F5BD00C3BCAA /* ViewModel */,
+				592490322451F5F100C3BCAA /* View */,
 				5945FFEC241B76AA0072E035 /* Assets.xcassets */,
 				5945FFF1241B76AA0072E035 /* LaunchScreen.storyboard */,
 				5945FFF4241B76AA0072E035 /* Info.plist */,
@@ -468,7 +519,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59E27614244227D1003F3239 /* PlayGameFightWithYourSelfPage.swift in Sources */,
-				59E27618244228A5003F3239 /* FirestoreViewModel.swift in Sources */,
+				59E27618244228A5003F3239 /* PlayGameFirestoreVM.swift in Sources */,
 				59E2761624422854003F3239 /* PlayGameFirestoreOnlinePage.swift in Sources */,
 				59E2761D2442B5FD003F3239 /* CardCell.swift in Sources */,
 				5945FFE7241B76A70072E035 /* AppDelegate.swift in Sources */,
@@ -478,6 +529,7 @@
 				595C4437244312DF00FBD4E4 /* RoomListCell.swift in Sources */,
 				591F6BD72441D59C00D2ACB6 /* LobbyPage.swift in Sources */,
 				595C443B24433DE300FBD4E4 /* OnlineCardCell.swift in Sources */,
+				592490372451F6F800C3BCAA /* LobbyFirestoreVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

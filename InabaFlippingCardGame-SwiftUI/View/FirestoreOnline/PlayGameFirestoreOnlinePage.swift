@@ -11,10 +11,8 @@ import QGrid
 
 struct PlayGameFirestoreOnlinePage: View {
     
-    @ObservedObject var firestoreViewModel = FirestoreViewModel()
-    
-    @State private var turnCount = 99
-    
+    @ObservedObject var playGameFirestoreVM = PlayGameFirestoreVM()
+        
     init() {
         UINavigationBar.appearance().backgroundColor = .clear
     }
@@ -49,7 +47,7 @@ struct PlayGameFirestoreOnlinePage: View {
                 }.frame(height: geometry.size.height * 0.2)
                 
                 //CollectionView的なライブラリ
-                QGrid(self.firestoreViewModel.inabaCards,
+                QGrid(self.playGameFirestoreVM.inabaCards,
                       columns: 6,
                       vSpacing: geometry.size.height * 0.012,
                       hSpacing: geometry.size.width * 0.02,
