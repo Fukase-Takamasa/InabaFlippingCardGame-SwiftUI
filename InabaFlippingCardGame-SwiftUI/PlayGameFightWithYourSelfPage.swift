@@ -44,7 +44,7 @@ struct PlayGameFightWithYourSelfPage: View {
         CardData(id: "1", imageName: "ina15", isOpened: false, isMatched: false),
     ]
     
-    @State private var turnCount = 99
+    @State private var turnCount = 50
     
     init() {
         UINavigationBar.appearance().backgroundColor = .clear

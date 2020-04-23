@@ -15,29 +15,43 @@ struct CardCell: View {
     var index = 0
     
     var body: some View {
-        returnImage(cardData: cardData, index: index)
-            .resizable()
-            .scaledToFit()
-            
-            
+//        returnImage(cardData: cardData, index: index)
+        
+        ZStack(){
+            Color(.white)
+            if cardData.isMatched || cardData.isOpened {
+                Image(cardData.imageName)
+                    .resizable()
+                    .scaledToFit()
+            }else {
+                if index % 2 == 0 {
+                    Image("CardBackImageRed")
+                        .resizable()
+                        .scaledToFill()
+                }else {
+                    Image("CardBackImageBlue")
+                        .resizable()
+                        .scaledToFill()
+                }
+            }
+        }.cornerRadius(6)
             .onTapGesture {
                 self.inabaCards[0].isOpened.toggle()
-                
         }
     }
 }
 
-private func returnImage(cardData: CardData, index: Int) -> Image {
-    if cardData.isMatched || cardData.isOpened {
-        return Image(cardData.imageName)
-    }else {
-        if index % 2 == 0 {
-            return Image("CardBackImageRed")
-        }else {
-            return Image("CardBackImageBlue")
-        }
-    }
-}
+//private func returnImage(cardData: CardData, index: Int) -> Image {
+//    if cardData.isMatched || cardData.isOpened {
+//        return Image(cardData.imageName)
+//    }else {
+//        if index % 2 == 0 {
+//            return Image("CardBackImageRed")
+//        }else {
+//            return Image("CardBackImageBlue")
+//        }
+//    }
+//}
 
 //struct CardCell_Previews: PreviewProvider {
 //    static var previews: some View {
