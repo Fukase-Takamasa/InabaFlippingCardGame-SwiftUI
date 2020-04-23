@@ -66,15 +66,16 @@ struct PlayGameFightWithYourSelfPage: View {
                     .font(.system(size: 16, weight: .semibold, design: .default))
             }
         }
-        
     }
     
     var body: some View {
-        VStack {
-            ZStack {
-                Color(red: 255/255, green: 192/255, blue: 0/255)
-                    .edgesIgnoringSafeArea(.all)
-                VStack{
+        GeometryReader { geometry in
+        ZStack {
+            Color(red: 255/255, green: 192/255, blue: 0/255)
+                .edgesIgnoringSafeArea(.all)
+            VStack(alignment: .center, spacing: 0){
+                VStack(spacing: 0) {
+                    Spacer()
                     HStack{
                         VStack{
                             Rectangle()
@@ -90,21 +91,27 @@ struct PlayGameFightWithYourSelfPage: View {
                             Text("ターン").font(.system(size: 30, weight: .medium, design: .default))
                         }
                     }
-                    //CollectionView的なライブラリ
-                    QGrid(inabaCards,
-                          columns: 6,
-                          vSpacing: 10,
-                          hSpacing: 6,
-                          vPadding: 0,
-                          hPadding: 0) { cardData in
-                            CardCell(inabaCards: self.$inabaCards, cardData: cardData, index: 1)}
-                }
-                .padding(.all, 18)
-                .padding(.top, 40)
-            }
-            .navigationBarTitle("自分との戦い部屋", displayMode: .inline)
-            .navigationBarBackButtonHidden(true)
-                .navigationBarItems(leading: backButton) //上で自作したカスタム戻るボタンを設置
+                    Spacer()
+                }.frame(height: geometry.size.height * 0.2)
+                
+                //CollectionView的なライブラリ
+                QGrid(self.inabaCards,
+                      columns: 6,
+                      vSpacing: geometry.size.height * 0.012,
+                      hSpacing: geometry.size.width * 0.02,
+                      vPadding: 0,
+                      hPadding: 0) { cardData in
+                    CardCell(inabaCards: self.$inabaCards, cardData: cardData, index: 1)
+                }.frame(width: geometry.size.width * 0.9, height: geometry.size.height * 0.7, alignment: .center)
+                
+                VStack(spacing: 0) {
+                    Color.clear
+                }.frame(height: geometry.size.height * 0.1) //スペーサー
+            } //UIパーツを置いている画面全体に広がるエリア
+        }
+        .navigationBarTitle("自分との戦い部屋", displayMode: .inline)
+        .navigationBarBackButtonHidden(true)
+            .navigationBarItems(leading: self.backButton) //上で自作したカスタム戻るボタンを設置
             
         }
         .onAppear(perform: shuffleCards)
