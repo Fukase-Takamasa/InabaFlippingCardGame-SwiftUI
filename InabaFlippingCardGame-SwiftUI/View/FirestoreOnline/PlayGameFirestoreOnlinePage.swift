@@ -12,7 +12,10 @@ import QGrid
 struct PlayGameFirestoreOnlinePage: View {
     
     @ObservedObject var playGameFirestoreVM = PlayGameFirestoreVM()
-        
+    @State private var turnCount = 50
+    @State private var flipCount = 1
+    @State private var flippedCard = [0, 0]
+    
     init() {
         UINavigationBar.appearance().backgroundColor = .clear
     }
@@ -53,7 +56,8 @@ struct PlayGameFirestoreOnlinePage: View {
                       hSpacing: geometry.size.width * 0.02,
                       vPadding: 0,
                       hPadding: 0) { cardData in
-                    OnlineCardCell(cardData: cardData)
+//                    OnlineCardCell(cardData: cardData)
+                        OnlineCardCell(playGameFirestoreVM: self.playGameFirestoreVM, turnCount: self.$turnCount, flipCount: self.$flipCount, flippedCard: self.$flippedCard, cardData: cardData)
                 }.frame(width: geometry.size.width * 0.9, height: geometry.size.height * 0.7, alignment: .center)
                 
                 VStack(spacing: 0) {

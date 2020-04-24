@@ -11,10 +11,10 @@ import Firebase
 
 class PlayGameFirestoreVM: ObservableObject {
     @Published var inabaCards = [CardData]()
+    let db: Firestore!
     
     init() {
-        let db = Firestore.firestore()
-        
+        db = Firestore.firestore()
         db.collection("rooms")
             .document("7153904E-F915-47B3-B9B8-25DFF479B60ERoom")
             .collection("cardData")

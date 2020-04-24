@@ -103,7 +103,6 @@ struct PlayGameFightWithYourSelfPage: View {
                       hSpacing: geometry.size.width * 0.02,
                       vPadding: 0,
                       hPadding: 0) { cardData in
-//                        CardCell(inabaCards: self.$inabaCards, cardData: cardData)
                         CardCell(inabaCards: self.$inabaCards, turnCount: self.$turnCount, flipCount: self.$flipCount, flippedCard: self.$flippedCard, cardData: cardData)
                 }.frame(width: geometry.size.width * 0.9, height: geometry.size.height * 0.7, alignment: .center)
                 

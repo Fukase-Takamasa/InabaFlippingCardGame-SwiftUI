@@ -16,10 +16,8 @@ struct CardCell: View {
     @Binding var flippedCard: [Int]
     
     var cardData: CardData
-//    var index = 0
     
     var body: some View {
-//        returnImage(cardData: cardData, index: index)
         
         ZStack(){
             Color(.white)
@@ -40,7 +38,6 @@ struct CardCell: View {
             }
         }.cornerRadius(6)
             .onTapGesture {
-//                self.inabaCards[self.cardData.id].isOpened.toggle()
                 self.tapCard()
         }
     }
@@ -82,7 +79,7 @@ struct CardCell: View {
                 //クリアしたか、それとも0ターンになってしまったかどうかチェックし、それぞれアラートを表示
 //                checkClearOrFailed()
             }
-    }
+        }
     }
 }
 
