@@ -11,7 +11,7 @@ import SwiftUI
 struct OnlineCardCell: View {
     
     var cardData: CardData
-    var index = 0
+//    var index = 0
     
     var body: some View {
         ZStack(){
@@ -21,7 +21,7 @@ struct OnlineCardCell: View {
                     .resizable()
                     .scaledToFit()
             }else {
-                if index % 2 == 0 {
+                if cardData.id % 2 == 0 {
                     Image("CardBackImageRed")
                         .resizable()
                         .scaledToFill()

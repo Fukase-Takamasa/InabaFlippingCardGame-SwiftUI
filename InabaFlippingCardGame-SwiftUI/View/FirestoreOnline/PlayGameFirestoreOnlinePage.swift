@@ -53,7 +53,7 @@ struct PlayGameFirestoreOnlinePage: View {
                       hSpacing: geometry.size.width * 0.02,
                       vPadding: 0,
                       hPadding: 0) { cardData in
-                    OnlineCardCell(cardData: cardData, index: 1)
+                    OnlineCardCell(cardData: cardData)
                 }.frame(width: geometry.size.width * 0.9, height: geometry.size.height * 0.7, alignment: .center)
                 
                 VStack(spacing: 0) {

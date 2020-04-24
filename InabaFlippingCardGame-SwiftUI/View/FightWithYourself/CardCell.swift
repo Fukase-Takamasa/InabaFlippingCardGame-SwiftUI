@@ -12,7 +12,7 @@ struct CardCell: View {
     
     @Binding var inabaCards: [CardData]
     var cardData: CardData
-    var index = 0
+//    var index = 0
     
     var body: some View {
 //        returnImage(cardData: cardData, index: index)
@@ -24,7 +24,7 @@ struct CardCell: View {
                     .resizable()
                     .scaledToFit()
             }else {
-                if index % 2 == 0 {
+                if cardData.id % 2 == 0 {
                     Image("CardBackImageRed")
                         .resizable()
                         .scaledToFill()
@@ -36,7 +36,7 @@ struct CardCell: View {
             }
         }.cornerRadius(6)
             .onTapGesture {
-                self.inabaCards[0].isOpened.toggle()
+                self.inabaCards[self.cardData.id].isOpened.toggle()
         }
     }
 }

@@ -23,7 +23,7 @@ class PlayGameFirestoreVM: ObservableObject {
             print("snapshot流れた")
             if let snapshot = snapshot {
                 self.inabaCards = snapshot.documents.map{ data -> CardData in
-                    return CardData(id: data.documentID, imageName: data.data()["imageName"] as! String, isOpened: data.data()["isOpened"] as! Bool, isMatched: data.data()["isMatched"] as! Bool)
+                    return CardData(id: data.data()["id"] as! Int, imageName: data.data()["imageName"] as! String, isOpened: data.data()["isOpened"] as! Bool, isMatched: data.data()["isMatched"] as! Bool)
                 }
             }
         })
