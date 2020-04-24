@@ -45,6 +45,8 @@ struct PlayGameFightWithYourSelfPage: View {
     ]
     
     @State private var turnCount = 50
+    @State private var flipCount = 1
+    @State private var flippedCard = [0, 0]
     
     init() {
         UINavigationBar.appearance().backgroundColor = .clear
@@ -101,7 +103,8 @@ struct PlayGameFightWithYourSelfPage: View {
                       hSpacing: geometry.size.width * 0.02,
                       vPadding: 0,
                       hPadding: 0) { cardData in
-                        CardCell(inabaCards: self.$inabaCards, cardData: cardData)
+//                        CardCell(inabaCards: self.$inabaCards, cardData: cardData)
+                        CardCell(inabaCards: self.$inabaCards, turnCount: self.$turnCount, flipCount: self.$flipCount, flippedCard: self.$flippedCard, cardData: cardData)
                 }.frame(width: geometry.size.width * 0.9, height: geometry.size.height * 0.7, alignment: .center)
                 
                 VStack(spacing: 0) {
@@ -115,6 +118,7 @@ struct PlayGameFightWithYourSelfPage: View {
             
         }
         .onAppear(perform: shuffleCards)
+//        .onAppear(perform: printCheatSheet)
     }
     
     func shuffleCards() {
@@ -123,6 +127,18 @@ struct PlayGameFightWithYourSelfPage: View {
             inabaCards[i].id = i
         }
     }
+    
+//    func printCheatSheet() {
+//        var answers: [String] = []
+//        for card in inabaCards {
+//            answers += [card.imageName]
+//        }
+//        print("チートシート: \(answers[0..<6])")
+//        print("チートシート: \(answers[6..<12])")
+//        print("チートシート: \(answers[12..<18])")
+//        print("チートシート: \(answers[18..<24])")
+//        print("チートシート: \(answers[24..<30])")
+//    }
 }
 
 struct PlayGameFightWithYourSelfPage_Previews: PreviewProvider {

@@ -11,6 +11,10 @@ import SwiftUI
 struct CardCell: View {
     
     @Binding var inabaCards: [CardData]
+    @Binding var turnCount: Int
+    @Binding var flipCount: Int
+    @Binding var flippedCard: [Int]
+    
     var cardData: CardData
 //    var index = 0
     
@@ -36,22 +40,52 @@ struct CardCell: View {
             }
         }.cornerRadius(6)
             .onTapGesture {
-                self.inabaCards[self.cardData.id].isOpened.toggle()
+//                self.inabaCards[self.cardData.id].isOpened.toggle()
+                self.tapCard()
         }
+    }
+
+    private func tapCard() {
+        if inabaCards[self.cardData.id].isOpened == false {
+            self.inabaCards[self.cardData.id].isOpened = true
+            //フリップ1回目　カードをめくり、カウントを＋1と　めくったカードのindexを記録
+            if self.flipCount == 1 {
+                self.flipCount += 1
+                self.flippedCard[0] = self.cardData.id
+            }else {
+                turnCount -= 1
+                //フリップ２回目　２枚がマッチしてるかジャッジ
+                self.flippedCard[1] = self.cardData.id
+                if (inabaCards[flippedCard[0]].imageName) == (inabaCards[flippedCard[1]].imageName) {
+                    print("マッチした！")
+                    print("マッチ結果: \(inabaCards[flippedCard[0]]), \(inabaCards[flippedCard[1]])")
+                    print("flippedCard: \(flippedCard)")
+                    //マッチした！両方のカードのisMatchedをtrueにする
+                    inabaCards[flippedCard[0]].isMatched = true
+                    inabaCards[flippedCard[1]].isMatched = true
+                    self.flipCount = 1
+                    self.flippedCard = [0,0]
+                }else {
+                    print("マッチしませんでした")
+                    print("マッチ結果: \(inabaCards[flippedCard[1]]), \(inabaCards[flippedCard[1]])")
+                    print("flippedCard: \(flippedCard)")
+//                    collectionView.isUserInteractionEnabled = false
+                    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5) {
+                        //マッチしてないので、両方閉じる
+                        self.inabaCards[self.flippedCard[0]].isOpened = false
+                        self.inabaCards[self.flippedCard[1]].isOpened = false
+                        self.flipCount = 1
+                        self.flippedCard = [0,0]
+//                        collectionView.isUserInteractionEnabled = true
+                    }
+                }
+                //クリアしたか、それとも0ターンになってしまったかどうかチェックし、それぞれアラートを表示
+//                checkClearOrFailed()
+            }
+    }
     }
 }
 
-//private func returnImage(cardData: CardData, index: Int) -> Image {
-//    if cardData.isMatched || cardData.isOpened {
-//        return Image(cardData.imageName)
-//    }else {
-//        if index % 2 == 0 {
-//            return Image("CardBackImageRed")
-//        }else {
-//            return Image("CardBackImageBlue")
-//        }
-//    }
-//}
 
 //struct CardCell_Previews: PreviewProvider {
 //    static var previews: some View {
